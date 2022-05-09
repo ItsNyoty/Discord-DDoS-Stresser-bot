@@ -7,7 +7,7 @@ bot = commands.Bot(command_prefix="bye ")
 
 @bot.command()
 async def bye(ctx):
-    if ctx.channel.id != 947476218024976424:
+    if ctx.channel.id != CHANNEL ID HERE:
         return
     def r():
         randip = ".".join(str(random.randint(0, 255)) for _ in range(4))
@@ -54,4 +54,4 @@ async def on_ready():
     print("ready")
     await bot.change_presence(activity=discord.Game(name="bye bye"))
 
-bot.run("OTQ3MzMwNzM4MTE2NzU1NDY2.YhrsgA.p5zMbXOIg4lmy4KFF6uw6NgcmI4")
+bot.run("TOKEN HERE")
